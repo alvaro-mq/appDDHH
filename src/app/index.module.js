@@ -2,6 +2,18 @@
   'use strict';
 
   angular
-    .module('appDdhh', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ngRoute', 'ngMaterial', 'toastr']);
+    .module('appDdhh', ['ngAnimate', 
+    'ngCookies', 
+    'ngTouch', 
+    'ngSanitize', 
+    'ngMessages', 
+    'ngAria', 
+    'ngResource', 
+    'ngRoute', 
+    'ngMaterial', 
+    'toastr',
+    'leaflet-directive',
+    'pascalprecht.translate'
+    ]);
 
 })();

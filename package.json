@@ -1,9 +1,13 @@
 {
-  "name": "appDdhh",
-  "version": "0.0.0",
+  "name": "appddhh",
+  "version": "0.0.1",
   "dependencies": {},
   "scripts": {
     "test": "gulp test"
+  },
+  "repository":{
+    "type": "git",
+    "utl": "git@github.com:alvaromamani/appDDHH.git"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",

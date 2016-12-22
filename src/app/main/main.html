@@ -2,34 +2,38 @@
 
   <md-content>
     <header>
-      <acme-navbar creation-date="main.creationDate"></acme-navbar>
-    </header>
+      <!--<acme-navbar creation-date="main.creationDate"></acme-navbar>-->
 
+      <center><span translate="GENERAL.TITULO"></span><center>
+        <acme-malarkey extra-values="['Bienvenido a nuestro proyecto']"></acme-malarkey><br>
+        <md-button aria-label="Espanol" ng-click="main.cambiarIdioma('es')"> Espanol</md-button>
+        <md-button aria-label="Aymara" ng-click="main.cambiarIdioma('ay')"> Aymara </md-button>
+    </header>
     <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
+      <h1 translate="GENERAL.BIENVENIDA"></h1>
       <p class="lead">
         <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
       </p>
     </section>
-    <leaflet height="300px"></leaflet>
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+  <div class="techs" layout-align="center">
+      <md-card style="width: 50%">
         <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
+          <img class="pull-right" ng-src="assets/images/icone-perfil.png" alt="Personas">
+          <strong><h3 class="md-title">Juez</h3></strong>
+          <strong><span translate="GENERAL.ACTOR.NOMBRE_COMPLETO"></span></strong> Juancito Pinto<br>
+          <strong><span translate="GENERAL.ACTOR.FECHA_NACIMIENTO"></span></strong>: 15/01/1967<br>
+          <strong><span translate="GENERAL.ACTOR.ESTADO_CIVIL"></span></strong>: Casado<br>
         </md-card-content>
         <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
+          <md-button ng-href="{{ awesomeThing.url }}">Ver perfil completo</md-button>
         </div>
       </md-card>
       
     </div>
+
+
+    <leaflet height="300px"></leaflet>
+  
   </md-content>
 
 </div>

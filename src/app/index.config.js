@@ -5,8 +5,9 @@
     .module('appDdhh')
     .config(config);
 
+  config.$inject = ['$logProvider', 'toastrConfig','$translateProvider'];
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig,$translateProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -16,6 +17,15 @@
     toastrConfig.positionClass = 'toast-top-right';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
+
+    // angular-translate configuration
+    $translateProvider.useLoader('$translatePartialLoader', {
+      urlTemplate: '{part}/i18n/{lang}.json'
+    });
+    $translateProvider.preferredLanguage('es');
+    $translateProvider.useSanitizeValueStrategy(null);
+
+
   }
 
 })();

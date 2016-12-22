@@ -5,15 +5,16 @@
     .module('appDdhh')
     .controller('MainController', MainController);
 
+  MainController.$inject = ['$timeout','webDevTec','toastr','$translate'];
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function MainController($timeout, webDevTec, toastr,$translate) {
     var vm = this;
 
     vm.awesomeThings = [];
     vm.classAnimation = '';
     vm.creationDate = 1482346013491;
     vm.showToastr = showToastr;
-
+    vm.cambiarIdioma = cambiarIdioma;
     activate();
 
     function activate() {
@@ -35,5 +36,10 @@
         awesomeThing.rank = Math.random();
       });
     }
+    function cambiarIdioma(codigo){
+      console.log(codigo);
+      $translate.use(codigo);
+    }
+
   }
 })();

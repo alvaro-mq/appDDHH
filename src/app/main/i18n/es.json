@@ -1,0 +1,11 @@
+{
+    "GENERAL":{
+        "TITULO":"Aplicacion para conocer tus Derechos",
+        "BIENVENIDA":"Bienvenido a la aplicacion",
+        "ACTOR":{
+            "NOMBRE_COMPLETO":"Nombre Completo",
+            "FECHA_NACIMIENTO":"Fecha de Nacimiento",
+            "ESTADO_CIVIL":"Estado Civil"
+        }
+    }
+}

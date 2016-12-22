@@ -1,0 +1,17 @@
+<md-menu id="language-menu" md-position-mode="right bottom">
+  <md-button class="language-button" ng-click="$mdOpenMenu()" aria-label="Lenguaje" md-menu-origin md-menu-align-target>
+    <div layout="row" layout-align="center center">
+      <span class="iso" hide-xs>{{$ctrl.lenguajeSeleccionado.titulo}}</span>
+    </div>
+  </md-button>
+
+  <md-menu-content width="3" id="language-menu-content">
+    <md-menu-item ng-repeat="leng in $ctrl.lenguajes">
+      <md-button ng-click="$ctrl.cambiarLenguaje(leng)" aria-label="{{leng.titulo}}">
+        <span layout="row" layout-align="start center">
+          <span translate="{{leng.traduccion}}"></span>
+        </span>
+      </md-button>
+    </md-menu-item>
+  </md-menu-content>
+</md-menu>

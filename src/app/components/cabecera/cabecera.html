@@ -1,0 +1,15 @@
+<div layout="row">
+       <!--<center><span translate="GENERAL.TITULO"></span><center>
+        <acme-malarkey extra-values="['Bienvenido a nuestro proyecto']"></acme-malarkey><br>
+-->
+        <md-toolbar class="md-hue-2">
+            <h1><center><span translate="GENERAL.TITULO"></span><center></h1>
+            
+                {{$ctrl.viewTitle}}
+            <div class="md-toolbar-tools">
+         
+         <md-button aria-label="Espanol" ng-click="$ctrl.cambiarIdioma('es')"> Espanol</md-button>
+         <md-button aria-label="Aymara" ng-click="$ctrl.cambiarIdioma('ay')"> Aymara </md-button>
+            </div>
+        </md-toolbar>
+  </div>

@@ -1,0 +1,54 @@
+.header {
+  position: relative;
+  height: 130px !important;
+  min-height: 130px !important;
+  max-height: 130px !important;
+  padding-bottom: 16px !important;
+  padding: 24px 0 !important;
+
+  .title {
+    font-size: 34px;
+    line-height: 1;
+    color: #FFFFFF;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .bottom {
+      &.search {
+        height: 40px;
+      }
+      .search {
+        height: 40px;
+        min-height: 40px;
+        max-width: 220px;
+        padding: 8px 8px 8px 16px;
+        background: #FFFFFF;
+        margin-bottom: 5px;
+        .icon {
+          margin: 0;
+          color: rgba(0,0,0,0.54);
+        }
+      }
+  }
+  .parent {
+    position: relative;
+    top: -2px;
+  }
+  .breadcrumb {
+    a {
+      color: rgba(0,0,0,0.54);
+      text-decoration: none;
+    }
+  }
+  .add-event-button {
+    position: absolute;
+    right: 18px;
+    bottom: -32px;
+    &.md-fab {
+      line-height: 53px;
+      width: 53px;
+      height: 53px;
+    }
+  }
+}

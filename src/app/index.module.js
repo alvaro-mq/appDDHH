@@ -11,7 +11,9 @@
     'ngResource', 
     'ngRoute', 
     'ngMaterial', 
+    'underscore',
     'toastr',
+    'ui.router',
     'leaflet-directive',
     'pascalprecht.translate'
     ]);

@@ -23,7 +23,13 @@
     "angular-leaflet-directive": "^0.10.0",
     "angular-ui-router": "^0.3.2",
     "angular-underscore-module": "^1.0.3",
-    "angular-material-icons": "^0.7.1"
+    "angular-material-icons": "^0.7.1",
+    "angular-intro.js": "^2.1.1",
+    "angular-timeline": "^1.7.0",
+    "ac-fancy-input": "1.0.3",
+    "material-steppers": "^1.0.3",
+    "angular-typewrite": "^0.0.15",
+    "angular-chart.js": "^1.1.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.3",

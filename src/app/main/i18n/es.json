@@ -1,11 +1,30 @@
 {
     "GENERAL":{
-        "TITULO":"Aplicacion para conocer tus Derechos",
+        "TITULO":"Conoce tus Derechos",
         "BIENVENIDA":"Bienvenido a la aplicacion",
         "ACTOR":{
             "NOMBRE_COMPLETO":"Nombre Completo",
             "FECHA_NACIMIENTO":"Fecha de Nacimiento",
             "ESTADO_CIVIL":"Estado Civil"
-        }
+        },
+        "GENERO":{
+            "HOMBRE":"Hombre",
+            "MUJER":"Mujer"
+        },
+        "NICK":"Nick",
+        "HECHO_POR":"Desarrollado por AITEC"
+    },
+    "TITULOS":{
+        "HISTORIAS":"Historias para jugar",
+        "SITIOS":"Lugares donde encontrar informacion",
+        "ESTADISTICAS":"Estadisticas de Injusticias"
+    },
+    "BOTONES":{
+        "ACEPTAR":"Aceptar",
+        "CANCELAR":"Cancelar",
+        "EMPEZAR":"Empezar",
+        "SIGUIENTE":"Siguiente",
+        "ANTERIOR":"Anterior",
+        "AYUDA":"Ayuda"
     }
 }

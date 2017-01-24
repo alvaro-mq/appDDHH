@@ -15,7 +15,14 @@
     'toastr',
     'ui.router',
     'leaflet-directive',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'ngMdIcons',
+    'angular-intro',
+    'angular-timeline',
+    'mdSteppers',
+    'angularTypewrite',
+    'chart.js',
+    'ngCookies'
     ]);
 
 })();

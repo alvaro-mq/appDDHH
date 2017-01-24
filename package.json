@@ -1,11 +1,13 @@
 {
   "name": "appddhh",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-ngdocs": "^0.3.0"
+  },
   "scripts": {
     "test": "gulp test"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "utl": "git@github.com:alvaromamani/appDDHH.git"
   },

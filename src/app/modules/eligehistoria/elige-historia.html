@@ -1,0 +1,79 @@
+<div ng-intro-options="vm.IntroOptions" ng-intro-method="CallMe">
+  <md-cabecera></md-cabecera>
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-md="100" flex="50" layout="column">
+      <md-card class="md-whiteframe-4dp" flex>
+        <div style="width: 100%">
+          <md-subheader class="md-primary">
+            <div layout="row" flex>
+              <div flex="95">
+                <span translate="TITULOS.HISTORIAS"></span>
+              </div>
+              <div>
+                <md-tooltip><span translate="BOTONES.AYUDA"></span></md-tooltip>
+                <a ng-click="CallMe()">
+                  <md-icon>help</md-icon>
+                </a>
+              </div>
+            </div>
+            <md-divider></md-divider>
+          </md-subheader>
+        </div>
+        <md-card-content>
+          <div layout="column" layout-align="center">
+            <md-input-container id="step1">
+              <label>Historia</label>
+              <md-select ng-model="vm.datos.historia">
+                <md-option ng-repeat="historia in vm.historias" value="{{historia}}">{{historia.nombre}}</md-option>
+              </md-select>
+              {{vm.datos.historia.descripcion}}
+            </md-input-container>
+            <md-radio-group ng-model="data.opciones" ng-init="data.opciones='proyecto'">
+              <div style="display:inline-block; padding: 12px;">
+                <md-radio-button value="hombre"><span translate="GENERAL.GENERO.HOMBRE"></span></md-radio-button>
+              </div>
+              <div style="display:inline-block; padding: 12px;">
+                <md-radio-button value="mujer"><span translate="GENERAL.GENERO.MUJER"></span></md-radio-button>
+              </div>
+            </md-radio-group>
+            <img src="assets/images/untitled1.png" alt="" id="step2" class="md-card-image" width="150" height="150">
+            <md-input-container class="md-block" flex-gt-sm id="step3">
+              <label><span translate="GENERAL.NICK"></span></label>
+              <input ng-model="vm.datos.nick">
+            </md-input-container>
+          </div>
+        </md-card-content>
+        <md-button class="md-raised md-primary" id="step4" ng-click="vm.empezar()"><span translate="BOTONES.EMPEZAR"></span></md-button>
+      </md-card>
+    </div>
+    <div flex-md="100" flex="50" layout="column">
+      <md-card class="md-whiteframe-4dp">
+        <div style="width: 100%">
+          <md-subheader class="md-primary">
+            <div layout-align="center center">
+              <span translate="TITULOS.SITIOS"></span>
+            </div>
+            <md-divider></md-divider>
+          </md-subheader>
+        </div>
+        <md-card-content>
+          <leaflet height="300px" style="height: 100%;"></leaflet>
+        </md-card-content>
+      </md-card>
+      <md-card class="md-whiteframe-4dp">
+        <div style="width: 100%">
+          <md-subheader class="md-primary">
+            <div layout-align="center center">
+              <span translate="TITULOS.ESTADISTICAS"></span>
+            </div>
+            <hr>
+          </md-subheader>
+        </div>
+        <md-card-content>
+          <canvas id="bar" class="chart chart-bar" chart-data="vm.data" chart-labels="vm.labels"> chart-series="series"
+          </canvas>
+        </md-card-content>
+      </md-card>
+    </div>
+  </md-content>
+</div>

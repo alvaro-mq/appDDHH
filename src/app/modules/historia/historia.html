@@ -1,0 +1,206 @@
+<div class="page-layout carded fullwidth">
+  <div class="top-bg md-accent-bg" banner></div>
+  <div class="center" layout="column" flex ng-intro-options="vm.IntroOptions" ng-intro-method="CallMe">
+    <md-cabecera></md-cabecera>
+    <md-content class="md-padding" layout-xs="column" layout="row">
+      <!--<div class="md-whiteframe-4dp" layout="column" flex="60" layout-align="center center">
+        <img ng-src="assets/images/4New canvasa.png" class="md-card-image" alt="Washed Out">
+        <div layout="row">
+          <md-button class="md-raised md-primary" id="step4"><span translate="BOTONES.ACEPTAR"></span></md-button>
+          <md-button class="md-raised md-warn" id="step4"><span translate="BOTONES.CANCELAR"></span></md-button>
+        </div>
+      </div>-->
+      <div flex-xs flex-gt-xs="61" layout="column">
+        <md-card class="md-whiteframe-4dp">
+            <div style="width: 100%">
+            <md-subheader class="md-primary">
+              <div layout-align="center center">
+                Sitios donde encontrar informacion
+              </div>
+              <md-divider></md-divider>
+            </md-subheader>
+          </div>
+          <img class="pull-right" ng-src="assets/images/4New canvasa.png" class="md-card-image" alt="uno" width="300" height="200">
+          <md-card-content>
+
+          </md-card-content>
+          <div class="md-action-buttons">
+            <md-button class="md-raised md-primary" id="step4"><span translate="BOTONES.ACEPTAR"></span></md-button>
+            <md-button class="md-raised md-warn" id="step4"><span translate="BOTONES.CANCELAR"></span></md-button>
+          </div>
+        </md-card>
+      </div>
+      <div flex-xs flex-gt-xs="40" layout="column">
+          <md-card class="md-whiteframe-4dp">
+          <div style="width: 100%">
+            <md-subheader class="md-primary">
+              <div layout-align="center center">
+                Sitios donde encontrar informacion
+              </div>
+              <md-divider></md-divider>
+            </md-subheader>
+          </div>
+          <md-card-content>
+            <p typewrite type-delay="100" blink-cursor="false" text="'This is a typewrite directive.'"></p>
+            <img class="pull-right" ng-src="assets/images/4New canvasa.png" class="md-card-image" alt="uno" width="70" height="70">
+          </md-card-content>
+          <div class="md-action-buttons">
+            <md-button class="md-raised md-primary" id="step4"><span translate="BOTONES.ACEPTAR"></span></md-button>
+            <md-button class="md-raised md-warn" id="step4"><span translate="BOTONES.CANCELAR"></span></md-button>
+          </div>
+        </md-card>
+         <md-card class="md-whiteframe-4dp">  
+             <div style="width: 100%">
+            <md-subheader class="md-primary">
+              <div layout-align="center center">
+                Sitios donde encontrar informacion
+              </div>
+              <md-divider></md-divider>
+            </md-subheader>
+          </div>
+          <md-card-content>
+          <!-- <timeline>
+            <timeline-event ng-repeat="event in vm.events" side="right">
+              <timeline-badge class="{{event.badgeClass}}">
+                <i class="glyphicon {{event.badgeIconClass}}"></i>
+              </timeline-badge>
+              <timeline-panel>
+                <timeline-heading>
+                  <h6>{{event.title}}</h6>
+                </timeline-heading>
+              </timeline-panel>
+            </timeline-event>
+          </timeline>-->
+          <md-stepper id="stepper-demo" 
+        md-mobile-step-text="true" 
+        md-vertical="true" 
+        md-linear="false"
+        md-alternative="true">
+        <md-step md-label="Decidiste xxx">
+            <md-step-body>
+                hola
+            </md-step-body>
+            <md-step-actions>
+            </md-step-actions>
+        </md-step>
+        <md-step md-label="Create an group">
+            <md-step-body>
+                <p>Step content</p>
+            </md-step-body>
+            <md-step-actions>
+            </md-step-actions>
+        </md-step>
+         <md-step md-label="Create an group">
+            <md-step-body>
+                <p>Step content</p>
+            </md-step-body>
+            <md-step-actions>
+            </md-step-actions>
+        </md-step>
+         <md-step md-label="Create an group">
+            <md-step-body>
+                <p>Step content</p>
+            </md-step-body>
+            <md-step-actions>
+            </md-step-actions>
+        </md-step>
+       
+    </md-stepper>
+        <!--  <div id="timeline-speaker-example">
+            <h4>How about a speaker timeline?</h4>
+            <ul class="progress-indicator stacked dark">
+                <li class="current-time">
+                    <span class="time">2:45 - 3:30</span>
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        Some really cool title
+                        <span class="subdued">By a special speaker</span>
+                        <span class="sub-info">
+                            <ul>
+                                <li>Intro to stuff</li>
+                                <li>Stuff</li>
+                                <li>Advanced Stuff</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="time">1:30 - 2:30</span>
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        Some really cool title
+                        <span class="subdued">By a special speaker</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="time">12:45 - 1:30</span>
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        Some really cool title
+                        <span class="subdued">By a special speaker</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="time">12:00 - 12:30</span>
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        Some really cool title
+                        <span class="subdued">By a special speaker</span>
+                    </span>
+                </li>
+            </ul>
+        </div>-->
+        <!--<ul class="progress-indicator nocenter stacked">
+            <li class="completed">
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        <span class="fa fa-calendar"></span> June 3rd, 2014
+                    </span>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> May 21st, 2014
+                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
+                </span>
+            </li>
+            <li class="completed info">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> April 11th, 2014
+                    <span class="subdued">/ What a wild day!</span>
+                </span>
+            </li>
+        </ul>-->
+          </md-card-content>
+          <div class="md-action-buttons">
+            
+          </div>
+        </md-card>
+      </div>
+      
+      <!--      <div flex="40" layout="column">
+        <div class="md-whiteframe-4dp">
+          hola
+        </div>
+        <div class="md-whiteframe-4dp">
+           <timeline>
+            <timeline-event ng-repeat="event in vm.events" side="right">
+              <timeline-badge class="{{event.badgeClass}}">
+                <i class="glyphicon {{event.badgeIconClass}}"></i>
+              </timeline-badge>
+              <timeline-panel class="{{event.badgeClass}}">
+                <timeline-heading>
+                  <h4>{{event.title}}</h4>
+                </timeline-heading>
+                <p>{{event.content}}</p>
+              </timeline-panel>
+            </timeline-event>
+          </timeline>
+        
+
+      </div>
+  </div>-->
+    </md-content>
+  </div>
+</div>

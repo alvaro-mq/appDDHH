@@ -5,10 +5,10 @@
       .module('appDdhh')
       .config(config);
 
-  /* @ngInject */
+
 
   function config($stateProvider,$translatePartialLoaderProvider) {
-    $stateProvider
+ /*   $stateProvider
         .state('appDdhh.inicio', {
             url   : '/inicio',
             views : {
@@ -23,6 +23,6 @@
         });
 
 
-    $translatePartialLoaderProvider.addPart('app/main');
+    $translatePartialLoaderProvider.addPart('app/main');*/
   }
 })();

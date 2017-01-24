@@ -20,6 +20,7 @@
 
   function CabeceraController($attrs, $state, _, $translate) {
     var vm = this;
+    vm.isOpen = false;
     vm.title = _.isUndefined(vm.viewTitle)? $state.$current['title'] : vm.viewTitle;
     vm.cambiarIdioma = cambiarIdioma;
     /**

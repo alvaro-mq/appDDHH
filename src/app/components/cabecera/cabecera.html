@@ -1,15 +1,26 @@
-<div layout="row">
-       <!--<center><span translate="GENERAL.TITULO"></span><center>
+<div layout="column">
+  <!--<center><span translate="GENERAL.TITULO"></span><center>
         <acme-malarkey extra-values="['Bienvenido a nuestro proyecto']"></acme-malarkey><br>
 -->
-        <md-toolbar class="md-hue-2">
-            <h1><center><span translate="GENERAL.TITULO"></span><center></h1>
-            
-                {{$ctrl.viewTitle}}
-            <div class="md-toolbar-tools">
-         
+  <md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools" layout="row">  
+     <div flex="10">
+         <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true" >
+            <md-icon md-svg-src="assets/angular-material-assets/img/icons/ic_menu_24px.svg" aria-label="Close dialog" class="s96"></md-icon>
+         </md-button>
+     </div>
+     <div flex="65" layout-align="center center">
+          <span translate="GENERAL.HECHO_POR"></span>
+     </div>
+     <div layout-align="end">
          <md-button aria-label="Espanol" ng-click="$ctrl.cambiarIdioma('es')"> Espanol</md-button>
          <md-button aria-label="Aymara" ng-click="$ctrl.cambiarIdioma('ay')"> Aymara </md-button>
-            </div>
-        </md-toolbar>
-  </div>
+     </div>
+    </div>
+  </md-toolbar>
+  <md-toolbar class="md-hue-3">
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex"><span flex translate="GENERAL.TITULO"></span></h2>
+    </div>
+  </md-toolbar>
+</div>

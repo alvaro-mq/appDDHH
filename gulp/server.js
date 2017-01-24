@@ -61,3 +61,10 @@ gulp.task('serve:e2e', ['inject'], function () {
 gulp.task('serve:e2e-dist', ['build'], function () {
   browserSyncInit(conf.paths.dist, []);
 });
+gulp.task('ngdocs',[],function(){
+  var gulpDocs = require('gulp-ngdocs');
+  return gulp.src('/**/*.js')
+          .pipe(gulpDocs.process())
+          .pipe(gulp.dest('./docs'));
+});
+

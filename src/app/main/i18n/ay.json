@@ -1,11 +1,25 @@
 {
     "GENERAL":{
-        "TITULO":"SASDFASDFASDF adsfafds",
+        "TITULO":"Uñt'am Chipapa",
         "BIENVENIDA":"Wali Purtaja aka aplicacion",
         "ACTOR":{
             "NOMBRE_COMPLETO":"Phuqhat suti",
             "FECHA_NACIMIENTO":"Yurïw uru",
             "ESTADO_CIVIL":"Sapa-Jaqichata-Jaljtata"
-        }
+        },
+        "GENERO":{
+            "HOMBRE":"Chacha",
+            "MUJER":"Warmi"
+        },
+        "NICK":"ñanqha suti",
+        "HECHO_POR":"Lurata AITEC"
+    },
+    "BOTONES":{
+        "ACEPTAR":"Iyana",
+        "CANCELAR":"Jani",
+        "EMPEZAR":"Qalltaña",
+        "SIGUIENTE":"Jutïri",
+        "ANTERIOR":"Nayïri",
+        "AYUDA":"Yanapaña"
     }
 }

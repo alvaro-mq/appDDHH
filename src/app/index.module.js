@@ -13,7 +13,12 @@
     'ngMaterial', 
     'toastr',
     'leaflet-directive',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'cabecera',
+    'card',
+    'links',
+    'listOfHistory',
+    'register'
     ]);
 
 })();

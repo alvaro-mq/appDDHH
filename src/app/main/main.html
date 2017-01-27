@@ -1,39 +1,52 @@
-<div layout="vertical" layout-fill>
-
-  <md-content>
-    <header>
-      <!--<acme-navbar creation-date="main.creationDate"></acme-navbar>-->
-
-      <center><span translate="GENERAL.TITULO"></span><center>
-        <acme-malarkey extra-values="['Bienvenido a nuestro proyecto']"></acme-malarkey><br>
-        <md-button aria-label="Espanol" ng-click="main.cambiarIdioma('es')"> Espanol</md-button>
-        <md-button aria-label="Aymara" ng-click="main.cambiarIdioma('ay')"> Aymara </md-button>
-    </header>
-    <section class="jumbotron">
-      <h1 translate="GENERAL.BIENVENIDA"></h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      </p>
-    </section>
-  <div class="techs" layout-align="center">
-      <md-card style="width: 50%">
-        <md-card-content>
-          <img class="pull-right" ng-src="assets/images/icone-perfil.png" alt="Personas">
-          <strong><h3 class="md-title">Juez</h3></strong>
-          <strong><span translate="GENERAL.ACTOR.NOMBRE_COMPLETO"></span></strong> Juancito Pinto<br>
-          <strong><span translate="GENERAL.ACTOR.FECHA_NACIMIENTO"></span></strong>: 15/01/1967<br>
-          <strong><span translate="GENERAL.ACTOR.ESTADO_CIVIL"></span></strong>: Casado<br>
-        </md-card-content>
-        <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Ver perfil completo</md-button>
-        </div>
-      </md-card>
-      
-    </div>
-
-
-    <leaflet height="300px"></leaflet>
+<div ng-cloak layout="column">
   
-  </md-content>
+  <cabecera></cabecera>
 
+  <div flex layout="row">
+    <md-content flex class="teal-00" style="height: 100%;">
+
+      <div layout="row" layout-align="center center">
+        <div flex-gt-sm="70" flex="90" class="teal-400">
+          <md-tabs class="teal-00"  md-center-tabs="true" md-dynamic-height>
+            <md-tab label="Registro">
+              <register></register>
+            </md-tab>
+            <md-tab label="Lista">
+              <list-of-history></list-of-history>
+            </md-tab>
+            <md-tab label="Jugar">
+              <card></card>
+            </md-tab>
+          </md-tabs>
+        </div>
+      </div>
+      <!--
+      <div layout="column" layout-align="center center" layout-fill>
+        <div flex class="teal-100">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ratione repellat iusto alias. Necessitatibus, ex. Neque rerum officia omnis. Praesentium molestiae amet excepturi aut fugiat rem quos veniam harum quaerat.
+        </div>
+        <div flex class="teal-200">
+          2
+        </div>
+        <div flex class="teal-300">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate doloremque blanditiis, debitis ad enim commodi veniam facilis quas nihil ipsa possimus eos architecto. Enim aspernatur facilis dolore, assumenda impedit error.
+        </div>
+      </div>
+      -->
+    </md-content>
+  </div>
 </div>
+
+<style>
+  .teal-00{background-color: #ffffff; color: #000000;}
+  .teal-50{background-color: #e0f2f1; color: #000000;}
+  .teal-100{background-color: #b2dfdb; color: #000000;}
+  .teal-200{background-color: #80cbc4; color: #000000;}
+  .teal-300{background-color: #4db6ac; color: #000000;}
+  .teal-400{background-color: #26a69a; color: #000000;}
+  .teal-500{background-color: #009688; color: #ffffff;}
+  .teal-600{background-color: #00897b; color: #ffffff;}
+  .teal-700{background-color: #00796b; color: #ffffff;}
+  .teal-800{background-color: #00695c; color: #ffffff;}
+  .teal-900{background-color: #004d40; color: #ffffff;}
+</style>

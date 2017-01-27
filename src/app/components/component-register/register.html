@@ -1,0 +1,16 @@
+<md-content>    
+    <form name="datos">
+        <md-input-container>
+            <label>Nombre :</label>
+            <input ng-model="Nombre" required md-maxlength="10" type="text">
+        </md-input-container>
+        <md-input-container>
+            <label>Email</label>
+            <input name="correo" ng-model="correo" required>
+            <div ng-messages="datos.correo.$error">
+            <div ng-message="required">This is required!</div>
+            </div>
+        </md-input-container>
+        <md-button class="md-accent md-raised">Comenzar</md-button>
+    </form>
+</md-content>
